@@ -39,10 +39,10 @@
     [_scrollView addSubview:label];
     
     [self addImageWithName:@"niconiconi" text:@"Animated GIF"];
-    [self addImageWithName:@"wall-e" text:@"Animated WebP"];
-    [self addImageWithName:@"pia" text:@"Animated PNG (APNG)"];
-    [self addFrameImageWithText:@"Frame Animation"];
-    [self addSpriteSheetImageWithText:@"Sprite Sheet Animation"];
+//    [self addImageWithName:@"wall-e" text:@"Animated WebP"];
+//    [self addImageWithName:@"pia" text:@"Animated PNG (APNG)"];
+//    [self addFrameImageWithText:@"Frame Animation"];
+//    [self addSpriteSheetImageWithText:@"Sprite Sheet Animation"];
     
     _scrollView.panGestureRecognizer.cancelsTouchesInView = YES;
 }
@@ -109,15 +109,15 @@
         g.delegate = self;
     }
     
-    UILabel *imageLabel = [UILabel new];
-    imageLabel.backgroundColor = [UIColor clearColor];
-    imageLabel.frame = CGRectMake(0, 0, self.view.width, 20);
-    imageLabel.top = imageView.bottom + 10;
-    imageLabel.textAlignment = NSTextAlignmentCenter;
-    imageLabel.text = text;
-    [_scrollView addSubview:imageLabel];
+//    UILabel *imageLabel = [UILabel new];
+//    imageLabel.backgroundColor = [UIColor clearColor];
+//    imageLabel.frame = CGRectMake(0, 0, self.view.width, 20);
+//    imageLabel.top = imageView.bottom + 10;
+//    imageLabel.textAlignment = NSTextAlignmentCenter;
+//    imageLabel.text = text;
+//    [_scrollView addSubview:imageLabel];
     
-    _scrollView.contentSize = CGSizeMake(self.view.width, imageLabel.bottom + 20);
+//    _scrollView.contentSize = CGSizeMake(self.view.width, imageLabel.bottom + 20);
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{

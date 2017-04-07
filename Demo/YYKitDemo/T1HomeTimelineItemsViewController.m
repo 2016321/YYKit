@@ -13,6 +13,7 @@
 #import "YYFPSLabel.h"
 #import "YYPhotoGroupView.h"
 #import "YYSimpleWebViewController.h"
+#import "YYKitDemo-swift.h"
 
 @interface T1HomeTimelineItemsViewController() <UITableViewDelegate, UITableViewDataSource, T1StatusCellDelegate>
 @property (nonatomic, strong) NSMutableArray *layouts;

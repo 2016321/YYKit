@@ -10,6 +10,7 @@
 #import "YYKit.h"
 #import <ImageIO/ImageIO.h>
 #import <WebP/demux.h>
+#import "YYKitDemo-Swift.h"
 
 @interface YYImageExample()
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -25,7 +26,8 @@
     [self addCell:@"Animated Image" class:@"YYImageDisplayExample"];
     [self addCell:@"Progressive Image" class:@"YYImageProgressiveExample"];
     [self addCell:@"Web Image" class:@"YYWebImageExample"];
-    //[self addCell:@"Benchmark" class:@"YYImageBenchmark"];
+    [self addCell:@"bingo" class:@"BingoViewController"];
+    [self addCell:@"Benchmark" class:@"YYImageBenchmark"];
     [self.tableView reloadData];
 }
 
@@ -50,6 +52,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSString *className = self.classNames[indexPath.row];
     Class class = NSClassFromString(className);
     if (class) {
@@ -57,6 +60,10 @@
         ctrl.title = _titles[indexPath.row];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
+     
+//    BingoViewController *vc = [BingoViewController new];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

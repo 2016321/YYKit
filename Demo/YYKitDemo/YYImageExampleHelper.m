@@ -7,9 +7,9 @@
 //
 
 #import "YYImageExampleHelper.h"
-#import <ImageIO/ImageIO.h>
-#import <Accelerate/Accelerate.h>
-#import <bpg/libbpg.h>
+//#import <ImageIO/ImageIO.h>
+//#import <Accelerate/Accelerate.h>
+//#import <bpg/libbpg.h>
 
 @implementation YYImageExampleHelper
 
