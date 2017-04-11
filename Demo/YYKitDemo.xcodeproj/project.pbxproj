@@ -196,6 +196,7 @@
 		E7AD8DD01E96116500B5623E /* YYKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD8DCF1E96116500B5623E /* YYKitManager.swift */; };
 		E7AD8E0C1E962CFE00B5623E /* BingoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD8E0B1E962CFE00B5623E /* BingoViewController.swift */; };
 		E7CFBF951E9738DA004D70F3 /* BingoFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFBF941E9738DA004D70F3 /* BingoFPSLabel.swift */; };
+		E7CFBFB31E98F3B8004D70F3 /* SequenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFBFB21E98F3B8004D70F3 /* SequenceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -520,6 +521,8 @@
 		E7AD8DCF1E96116500B5623E /* YYKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYKitManager.swift; sourceTree = "<group>"; };
 		E7AD8E0B1E962CFE00B5623E /* BingoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingoViewController.swift; sourceTree = "<group>"; };
 		E7CFBF941E9738DA004D70F3 /* BingoFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingoFPSLabel.swift; sourceTree = "<group>"; };
+		E7CFBFB11E98F3B8004D70F3 /* SequenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceManager.h; sourceTree = "<group>"; };
+		E7CFBFB21E98F3B8004D70F3 /* SequenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -867,6 +870,8 @@
 			isa = PBXGroup;
 			children = (
 				E7AD8DCF1E96116500B5623E /* YYKitManager.swift */,
+				E7CFBFB11E98F3B8004D70F3 /* SequenceManager.h */,
+				E7CFBFB21E98F3B8004D70F3 /* SequenceManager.m */,
 				D9B2604F1BEE79370038C00A /* YYKit.h */,
 				E7AD8DCE1E96116500B5623E /* YYKitDemo-Bridging-Header.h */,
 				D9B25FA01BEE79370038C00A /* Base */,
@@ -1288,6 +1293,7 @@
 				D9B260621BEE79370038C00A /* UIBezierPath+YYAdd.m in Sources */,
 				D9B2605E1BEE79370038C00A /* CALayer+YYAdd.m in Sources */,
 				D9B260761BEE79370038C00A /* UIImageView+YYWebImage.m in Sources */,
+				E7CFBFB31E98F3B8004D70F3 /* SequenceManager.m in Sources */,
 				D97484D919CAAD2900F46DE1 /* YYAppDelegate.m in Sources */,
 				D943B48D19EC2BC100A9481E /* YYRootViewController.m in Sources */,
 				D9CC99EB1B8B528300A9466D /* YYImageProgressiveExample.m in Sources */,

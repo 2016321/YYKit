@@ -18,8 +18,8 @@ class BingoViewController: UIViewController {
         // Do any additional setup after loading the view.
         imageView.center = view.center
         view.addSubview(imageView)
-        imageView.addPan()
-        imageView.addTap()
+        imageView.bingo_addPan()
+        imageView.bingo_addTap()
         
         view.backgroundColor = UIColor.white
         
@@ -32,7 +32,7 @@ class BingoViewController: UIViewController {
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.imageView.manager_setImage(url:"https://s-media-cache-ak0.pinimg.com/1200x/2e/0c/c5/2e0cc5d86e7b7cd42af225c29f21c37f.jpg", placeholder: UIImage(named : "pia@2x" ), options: [.progressiveBlur,.setImageWithFadeAnimation], progress: { (receivedSize, expectedSize) in
+        self.imageView.bingo_setImage(url:"https://s-media-cache-ak0.pinimg.com/1200x/2e/0c/c5/2e0cc5d86e7b7cd42af225c29f21c37f.jpg", placeholder: UIImage(named : "pia@2x" ), options: [.progressiveBlur,.setImageWithFadeAnimation], progress: { (receivedSize, expectedSize) in
             print("\(receivedSize) -------------- \(expectedSize)")
         }, transform: nil) { (image, url, type, stage, error) in
             print("bingo")
