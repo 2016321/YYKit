@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  Image process is based on CoreGraphic and vImage.
  */
 @interface UIImage (YYAdd)
-
+- (UIImage *)hyb_cropEqualScaleImageToSize:(CGSize)size;
 #pragma mark - Create image
 ///=============================================================================
 /// @name Create image
